@@ -7,19 +7,19 @@ def file_replace(file_name,rep_word,new_word):
 
     for eachline in f_read: # 遍历整个文件
         if rep_word in eachline:    # 遍历整行
-            count = eachline.count(rep_word)    #.count(sub)返回 sub 在字符串里边出现的次数
+            count += eachline.count(rep_word)    #.count(sub)返回 sub 在字符串里边出现的次数
             # replace(old, new[, count])——>把字符串中的 old 子字符串替换成 new 子字符串，如果 count 指定，则替换不超过 count 次。
-            eachline = eachline.replace(rep_word,new_word)
+            eachline = eachline.replace(rep_word,new_word)  # 每行查询
         content.append(eachline)    #文件每行文字，未经过处理或者经过处理的数据，都存进content列表
-    decide = input('\n文件 %s 中共有%s个【%s】\n您确定要把所有的【%s】替换为【%s】吗？\n【YES/NO】：'\
+    decide = input('\n文件 %s 中共有%s个\n您确定要把所有的【%s】替换为【%s】吗？\n【YES/NO】：'\
                    % (file_name,count,rep_word,new_word))   #输出格式
 
-    if decide in ['YES','Yes','yes']:
-        f_write = open(file_name,'w')
-        f_write.writelines(content)
-        f_write.close()
+    if decide in ['YES','Yes','yes']:   #检验用户输入的判断
+        f_write = open(file_name,'w')   #可写入模式打开文件
+        f_write.writelines(content)     # 写入经过处理的数据
+        f_write.close()                 # 关闭文件
 
-    f_read.close()
+    f_read.close()                      # 关闭第一次打开的文件
 
 
 file_name = input('请输入文件名：')
