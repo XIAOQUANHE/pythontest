@@ -9,6 +9,9 @@
 '''3、建议使用以下方法，保持EasyGui的命名空间，同时减少输入字符的数量：'''
 # import easygui as eg
 # eg.msgbox('嘿，超级美女~')
+
+# p10_1.py
+
 import easygui as eg
 import sys
 
@@ -33,3 +36,7 @@ while 1:
         pass        # 如果用户选择Continue
     else:
         sys.exit(0)  # 如果用户选择Cancel   退出编辑器
+
+'''4、各种功能演示'''
+# import easygui
+# easygui.egdemo()

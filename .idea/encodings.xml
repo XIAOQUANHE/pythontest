@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/yu_c/Chapter10_GUI/settings.txt" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/yu_c/Chapter8_file/vediolist.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/yu_c/test_data/record.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/yu_c/test_data/something.txt" charset="GBK" />
