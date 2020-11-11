@@ -47,5 +47,5 @@ while 1:
             errmsg += ('【%s】为必填项。\n\n' % fieldNames[i])
     if errmsg == "":
         break
-    fleldValues = eg.multenterbox(errmsg,title,fieldNames,fieldValues)
+    fieldValues = eg.multenterbox(errmsg,title,fieldNames,fieldValues)
 print("用户资料如下：%s" % str(fieldValues))
