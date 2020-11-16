@@ -18,7 +18,7 @@ class C(A):
         print("离开C…")
 
 
-class D(C,B):
+class D(B,C):
     def __init__(self):
         print("进入D…")
         super().__init__()
